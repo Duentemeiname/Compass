@@ -20,6 +20,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
 
+from compass.beurlaubung import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,7 +29,7 @@ urlpatterns = [
          name="index",
          ),
     path('beurlaubung/',
-         include("compass.beurlaubung.urls", namespace="beurlaubung"),
+         include('compass.beurlaubung.urls', namespace="beurlaubung"),
          ),
 
 ]
