@@ -28,8 +28,13 @@ urlpatterns = [
          TemplateView.as_view(template_name="home/index.html"),
          name="index",
          ),
+    path('beurlaubung/teachers/',
+        include('compass.beurlaubung.teachers.urls', namespace="teachers"),
+        ),
+
     path('beurlaubung/',
          include('compass.beurlaubung.urls', namespace="beurlaubung"),
          ),
+
 
 ]

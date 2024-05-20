@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'compass.beurlaubung.apps.BeurlaubungConfig',
+    'compass.beurlaubung.teachers.apps.TeachersConfig',
 ]
 
 MIDDLEWARE = [
